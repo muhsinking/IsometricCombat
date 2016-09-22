@@ -39,7 +39,7 @@ namespace IsometricCombat
         protected override void LoadContent()
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            board = new Graph(Content.Load<Texture2D>("tile"), 12, 25);
+            board = new Graph(Content.Load<Texture2D>("tile-aa"), 12, 25);
         }
 
         /// <summary>
@@ -100,7 +100,7 @@ namespace IsometricCombat
             Vector2 pos = new Vector2(0, 0);
             int x = 0;
             int y = 0;
-            int sizeMult = 4;
+            int sizeMult = 2;
             for(int i = 0; i < height; i++)
             {
                 for(int j = 0; j < width; j++)
